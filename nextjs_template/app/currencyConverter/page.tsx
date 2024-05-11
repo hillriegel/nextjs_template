@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 export default function CurrencyConverter() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex  flex-col">
       <div className="header" style={{width: '100%'}}>
        <Image
               src="/images/navan_logo2.jpg"
@@ -21,7 +21,7 @@ export default function CurrencyConverter() {
             />
       </div>
 
-      <div style={{padding: '20px', width: '100%'}}>
+      <div className="min-h-screen flex-1" style={{padding: '20px', width: '100%'}}>
       <Grid container spacing={2}>
         <Grid item xs={6}>
           <Card style={{backgroundColor: '#fff', width: '80%'}}>
@@ -33,14 +33,14 @@ export default function CurrencyConverter() {
       </Grid>
       </div>
 
-
-
+      <div className="flex w-full">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           <div style={{padding: '24px'}}>
             <h1>Let's build an app with Grise, and the Navan engineering team.</h1>
           </div>
         </div>
+      </div>
       </div>
 
     </main>
