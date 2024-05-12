@@ -9,7 +9,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import TextField from '@mui/material/TextField';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import axios from 'axios'; // If you are using axios for API requests
 
 const now = new Date();
