@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import React, { useState, useEffect, useCallback, ChangeEvent } from 'react';
 import Grid from '@mui/material/Grid';
