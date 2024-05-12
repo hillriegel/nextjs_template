@@ -3,8 +3,8 @@
 import Image from "next/image";
 import React, { useState, useEffect, useCallback, ChangeEvent } from 'react';
 import Grid from '@mui/material/Grid';
-import ExternalApiAxios from '@/app/utils/apiRequest';
-import Box from '@mui/material/Box';
+import CurrencyCodesFrom from '@/app/utils/currencyCodesFrom';
+import CurrencyCodesTo from '@/app/utils/currencyCodesTo';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -15,12 +15,13 @@ import axios from 'axios'; // If you are using axios for API requests
 const now = new Date();
 
 export default function CurrencyConverter() {
-  const [amount, setAmount] = useState('');
-  const [debouncedAmount, setDebouncedAmount] = useState(amount);
+  const [amountFrom, setAmountFrom] = useState('0.00');
+  const [amountTo, setAmountTo] = useState('0.00');
+  const [debouncedAmount, setDebouncedAmount] = useState(amountFrom);
 
   // Handle amount change
-  const handleAmountChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setAmount(event.target.value);
+  const handleAmountFromChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setAmountFrom(event.target.value);
   };
 
   // Debounce the amount change handler
@@ -29,12 +30,12 @@ export default function CurrencyConverter() {
   }, 300), []); // 300ms debounce time
 
   useEffect(() => {
-    debouncer(amount);
+    debouncer(amountFrom);
     // Cleanup debouncer on component unmount
     return () => {
       debouncer.cancel();
     };
-  }, [amount, debouncer]);
+  }, [amountFrom, debouncer]);
 
   // Effect to perform API call
   useEffect(() => {
@@ -66,10 +67,10 @@ export default function CurrencyConverter() {
           <CardContent>
             <Grid container spacing={2}>
               <Grid item>
-                <TextField id="outlined-basic" label="Amount" variant="outlined" />
+                <TextField id="outlined-basic" label="Amount" variant="outlined" value={amountFrom} onChange={handleAmountFromChange} />
               </Grid>
               <Grid item>
-                <ExternalApiAxios />
+                <CurrencyCodesFrom />
               </Grid>
             </Grid>
           </CardContent>
@@ -81,10 +82,10 @@ export default function CurrencyConverter() {
           <CardContent>
             <Grid container spacing={2}>
               <Grid item>
-              <TextField id="outlined-basic" label="Amount" variant="outlined" />
+              <TextField id="outlined-basic" label="Amount" variant="outlined" value={amountTo} />
               </Grid>
               <Grid item>
-                <ExternalApiAxios />
+                <CurrencyCodesTo />
               </Grid>
             </Grid>
           </CardContent>

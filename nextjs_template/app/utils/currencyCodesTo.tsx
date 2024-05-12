@@ -8,9 +8,9 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
-export default function ExternalApiAxios() {
+export default function CurrencyCodesTo() {
     const [data, setData] = useState<string[]>([]);
-    const [currency, setCurrency] = useState('');
+    const [currencyTo, setCurrencyTo] = useState('USD');
   
     useEffect(() => {
       axios.get('https://currency-exchange.p.rapidapi.com/listquotes', {
@@ -27,7 +27,7 @@ export default function ExternalApiAxios() {
     }, []);
   
     const handleChange = (event: SelectChangeEvent) => {
-      setCurrency(event.target.value as string);
+      setCurrencyTo(event.target.value as string);
     };
   
     if (!data.length) return <div>Loading...</div>;
@@ -38,8 +38,8 @@ export default function ExternalApiAxios() {
           <InputLabel id="demo-simple-select-label">Currency</InputLabel>
           <Select
             labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={currency}
+            id="currencyTo"
+            value={currencyTo}
             label="Currency"
             onChange={handleChange}
           >
