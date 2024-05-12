@@ -5,8 +5,11 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+
+const now = new Date();
 
 export default function CurrencyConverter() {
   return (
@@ -20,16 +23,41 @@ export default function CurrencyConverter() {
               priority
             />
       </div>
-
+      <div className="items-center justify-between" style={{marginTop: '10px', width: '100%', textAlign: 'center', color: '#fff'}}>
+        {now.toDateString()}
+      </div>
       <div className="min-h-screen flex-1" style={{padding: '20px', width: '100%'}}>
       <Grid container spacing={2}>
         <Grid item xs={6}>
           <Card style={{backgroundColor: '#fff', width: '80%'}}>
           <CardContent>
-            <ExternalApiAxios />
+            <Grid container spacing={2}>
+              <Grid item>
+                <TextField id="outlined-basic" label="Amount" variant="outlined" />
+              </Grid>
+              <Grid item>
+                <ExternalApiAxios />
+              </Grid>
+            </Grid>
           </CardContent>
         </Card>
         </Grid>
+
+        <Grid item xs={6}>
+          <Card style={{backgroundColor: '#fff', width: '80%'}}>
+          <CardContent>
+            <Grid container spacing={2}>
+              <Grid item>
+              <TextField id="outlined-basic" label="Amount" variant="outlined" />
+              </Grid>
+              <Grid item>
+                <ExternalApiAxios />
+              </Grid>
+            </Grid>
+          </CardContent>
+        </Card>
+        </Grid>
+
       </Grid>
       </div>
 
