@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React, { useState, useEffect, useCallback, ChangeEvent } from 'react';
 import Grid from '@mui/material/Grid';
 import ExternalApiAxios from '@/app/utils/apiRequest';
 import Box from '@mui/material/Box';
@@ -6,12 +7,42 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { debounce } from 'lodash';
+import axios from 'axios'; // If you are using axios for API requests
 
 const now = new Date();
 
 export default function CurrencyConverter() {
+  const [amount, setAmount] = useState('');
+  const [debouncedAmount, setDebouncedAmount] = useState(amount);
+
+  // Handle amount change
+  const handleAmountChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setAmount(event.target.value);
+  };
+
+  // Debounce the amount change handler
+  const debouncer = useCallback(debounce((nextValue: string) => {
+    setDebouncedAmount(nextValue);
+  }, 300), []); // 300ms debounce time
+
+  useEffect(() => {
+    debouncer(amount);
+    // Cleanup debouncer on component unmount
+    return () => {
+      debouncer.cancel();
+    };
+  }, [amount, debouncer]);
+
+  // Effect to perform API call
+  useEffect(() => {
+    if (debouncedAmount) {
+      // Replace with your API call logic
+      console.log("API Call with amount:", debouncedAmount);
+      // axios.get(`your-api-url/${debouncedAmount}`).then(...).catch(...);
+    }
+  }, [debouncedAmount]);
+
   return (
     <main className="flex  flex-col">
       <div className="header" style={{width: '100%'}}>
