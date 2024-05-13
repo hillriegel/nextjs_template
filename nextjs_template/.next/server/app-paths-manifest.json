@@ -1,3 +1,4 @@
 {
-  "/currencyConverter/page": "app/currencyConverter/page.js"
+  "/currencyConverter/page": "app/currencyConverter/page.js",
+  "/page": "app/page.js"
 }

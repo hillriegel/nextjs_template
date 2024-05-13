@@ -99,15 +99,6 @@ export default function CurrencyConverter() {
 
   return (
     <main className="flex  flex-col">
-      <div className="header" style={{width: '100%'}}>
-       <Image
-              src="/images/navan_logo2.jpg"
-              alt="Navan Logo"
-              width={100}
-              height={24}
-              priority
-            />
-      </div>
       <div className="items-center justify-between" style={{marginTop: '10px', width: '100%', textAlign: 'center', color: '#fff'}}>
         {now.toDateString()}
       </div>
