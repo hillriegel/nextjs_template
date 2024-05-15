@@ -559,6 +559,9 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.border {
+  border-width: 1px;
+}
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }

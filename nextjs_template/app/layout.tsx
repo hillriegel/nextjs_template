@@ -22,7 +22,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import HomeIcon from '@mui/icons-material/Home';
-
+import ViewStream from '@mui/icons-material/ViewStream';
 import Link from 'next/link';
 
 export default function RootLayout({
@@ -52,16 +52,28 @@ const DrawerList = (
             </ListItemButton>
           </Link>
         </ListItem>
-                <ListItem key={"currencyEx"} disablePadding>
-                  <Link href="/currencyConverter">
-                <ListItemButton>
-                  <ListItemIcon>
-                    <CurrencyExchangeIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Currency Exchange" />
-                </ListItemButton>
-                </Link>
-              </ListItem>
+
+        <ListItem key={"currencyEx"} disablePadding>
+          <Link href="/currencyConverter">
+        <ListItemButton>
+          <ListItemIcon>
+            <CurrencyExchangeIcon />
+          </ListItemIcon>
+          <ListItemText primary="Currency Exchange" />
+        </ListItemButton>
+        </Link>
+      </ListItem>
+
+      <ListItem key={"currencyEx"} disablePadding>
+          <Link href="/sampleForm">
+        <ListItemButton>
+          <ListItemIcon>
+            <ViewStream/>
+          </ListItemIcon>
+          <ListItemText primary="Sample Form" />
+        </ListItemButton>
+        </Link>
+      </ListItem>
               
     </List>
     <Divider />
