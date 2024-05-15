@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState, useEffect, useCallback, ChangeEvent } from 'react';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+//import GCard from 'grisecon-mui/components/GCard';
 import CardContent from '@mui/material/CardContent';
 import TextField from '@mui/material/TextField';
 import debounce from 'lodash/debounce';
@@ -67,9 +67,9 @@ export default function CurrencyConverter() {
         }).catch(error => {
           console.error('Error fetching data:', error);
           // Handle errors here, possibly setting an error state to show in the UI
-        });;
+        });
       }
-    }, [debouncedAmount]);
+    }, [debouncedAmount, currencyFrom, currencyTo, amountFrom]);
 
   //currency exchange
   const handleChangeFrom = (event: SelectChangeEvent) => {
@@ -171,7 +171,7 @@ export default function CurrencyConverter() {
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           <div style={{padding: '24px'}}>
-            <h1>Let's build an app with Grise, and the Navan engineering team.</h1>
+            <h1>Let&apos;s build an app with Grise, and the Navan engineering team.</h1>
           </div>
         </div>
       </div>

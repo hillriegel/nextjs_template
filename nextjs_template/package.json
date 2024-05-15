@@ -22,6 +22,7 @@
     "axios": "^1.6.8",
     "bcrypt": "^5.1.1",
     "clsx": "^2.0.0",
+    "grisecon-mui": "^1.0.2",
     "lodash": "^4.17.21",
     "next": "^14.0.2",
     "nodemailer": "^6.9.13",
