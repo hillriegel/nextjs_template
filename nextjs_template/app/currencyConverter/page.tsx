@@ -25,7 +25,7 @@ export default function CurrencyConverter() {
   const [currencyTo, setCurrencyTo] = useState('USD');
 
 
-  const handleChangeTO = (event: SelectChangeEvent) => {
+  const handleChangeTo = (event: SelectChangeEvent) => {
     setCurrencyTo(event.target.value as string);
   };
 
@@ -150,7 +150,7 @@ export default function CurrencyConverter() {
                     id="currencyTo"
                     value={currencyTo}
                     label="Currency"
-                    onChange={handleChangeTO}
+                    onChange={handleChangeTo}
                   >
                     {data.map((curr, index) => (
                       <MenuItem key={index} value={curr}>{curr}</MenuItem>
