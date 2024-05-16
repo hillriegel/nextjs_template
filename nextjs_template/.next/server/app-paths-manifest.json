@@ -1,7 +1,5 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/currencyConverter/page": "app/currencyConverter/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/sampleForm/page": "app/sampleForm/page.js"
+  "/sampleForm/page": "app/sampleForm/page.js",
+  "/paginationForm/page": "app/paginationForm/page.js"
 }

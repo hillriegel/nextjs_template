@@ -108,7 +108,7 @@ const DrawerList = (
                 width={100}
                 height={24}
                 priority
-              />
+             />
           </Grid>
         </Grid>
         </div>
