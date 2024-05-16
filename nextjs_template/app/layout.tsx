@@ -25,6 +25,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import ViewStream from '@mui/icons-material/ViewStream';
 import Link from 'next/link';
 import PagesIcon from '@mui/icons-material/Pages';
+import Footer from './footer';
 
 export default function RootLayout({
   children,
@@ -130,8 +131,10 @@ const DrawerList = (
         {DrawerList}
       </Drawer>
       </div>
-
-      {children}
+      <div className="mainContent" style={{height: '100%'}}>
+        {children}
+      </div>
+      <Footer />
       </body>
     </html>
   );
