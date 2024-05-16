@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback, ChangeEvent } from 'react';
 import HomeBody from '@/app/homeBody';
 import ItemsDisplay from './ItemsDisplay';
 import PaginationBar from './PaginationBar';
+import SearchBar from './SearchBar';
 
 const Pagination = () => {
 
@@ -42,7 +43,10 @@ const Pagination = () => {
 
   return (
     <main className="flex min-h-screen flex-col" style={{marginTop: '30px'}}>
+
      <div style={{padding: '24px'}}>
+            <SearchBar />
+            <br />
             <ItemsDisplay items={items.itemsToDisplay} loading={loading}/>
             <PaginationBar items={items} updateItemsDisplayed={updateItemsDisplayed} setLoading={setLoading} />
           </div>
