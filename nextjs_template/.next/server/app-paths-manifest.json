@@ -1,6 +1,6 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/paginationForm/page": "app/paginationForm/page.js",
+  "/currencyConverter/page": "app/currencyConverter/page.js",
   "/cssDemo/page": "app/cssDemo/page.js",
-  "/currencyConverter/page": "app/currencyConverter/page.js"
+  "/sampleForm/page": "app/sampleForm/page.js"
 }
