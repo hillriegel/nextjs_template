@@ -5,34 +5,7 @@ import Button from '@mui/material/Button';
 import fetchData from './fetchData';
 import FirstPageIcon from '@mui/icons-material/FirstPage';
 import LastPageIcon from '@mui/icons-material/LastPage';
-
-interface Item {
-    id: number;
-    name: string;
-}
-
-interface UpdateState {
-    pageNumber?: number;
-    itemsToDisplay?: Item[];
-}
-
-interface APIResponse {
-    currentPage: number;
-    data: Item[];
-    itemsPerPage: number;
-    totalItems: number;
-    totalPages: number;
-}
-
-interface PaginationBarProps {
-    items: {
-        pageNumber: number;
-        itemsToDisplay: Item[];
-        
-    };
-    setLoading: Function;
-    updateItemsDisplayed: (newState: UpdateState) => void; 
-  }
+import {Item, UpdateState, APIResponse, PaginationBarProps} from './types';
 
 export default function PaginationBar({items, updateItemsDisplayed, setLoading}: PaginationBarProps) {
     const [numItems, setNumItems] = useState(0);
