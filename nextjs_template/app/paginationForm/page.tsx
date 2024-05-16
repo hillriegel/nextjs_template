@@ -7,10 +7,16 @@ import PaginationBar from './PaginationBar';
 
 const Pagination = () => {
 
+
+  interface Item {
+    id: number;
+    name: string;
+}
+
   const [items, setItems] = useState (
       {
         pageNumber: 1,
-        itemsToDisplay: [1,2,3]
+        itemsToDisplay: [{id: 1, name: 'Item 1'}]
       }
   )
 

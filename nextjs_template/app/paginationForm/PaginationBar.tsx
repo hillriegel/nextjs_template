@@ -4,10 +4,16 @@ import React, { useState, useEffect, useCallback, ChangeEvent } from 'react';
 import Button from '@mui/material/Button';
 import fetchData from './fetchData';
 
+
+interface Item {
+    id: number;
+    name: string;
+}
+
 interface PaginationBarProps {
     items: {
         pageNumber: number;
-        itemsToDisplay: number[];
+        itemsToDisplay: Item[];
     }
     updateItemsDisplayed: (newState: any) => void; 
   }

@@ -1,7 +1,6 @@
 
 
-export default function fetchData(currentPage, itemsPerPage) {
-    console.log('fetching data for ', currentPage);
+export default function fetchData(currentPage: number, itemsPerPage: number) {
     // Mock data array with 1000 items
     const allItems = Array.from({ length: 1000 }, (v, i) => ({
         id: i + 1,
