@@ -24,6 +24,7 @@ import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import HomeIcon from '@mui/icons-material/Home';
 import ViewStream from '@mui/icons-material/ViewStream';
 import Link from 'next/link';
+import PagesIcon from '@mui/icons-material/Pages';
 
 export default function RootLayout({
   children,
@@ -71,6 +72,17 @@ const DrawerList = (
             <ViewStream/>
           </ListItemIcon>
           <ListItemText primary="Sample Form" />
+        </ListItemButton>
+        </Link>
+      </ListItem>
+      
+      <ListItem key={"currencyEx"} disablePadding>
+          <Link href="/paginationForm">
+        <ListItemButton>
+          <ListItemIcon>
+            <PagesIcon/>
+          </ListItemIcon>
+          <ListItemText primary="Pagination" />
         </ListItemButton>
         </Link>
       </ListItem>
