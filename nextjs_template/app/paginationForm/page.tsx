@@ -23,7 +23,7 @@ const Pagination = () => {
       }
   )
 
-  const updateItemsDisplayed = (newState) => {
+  const updateItemsDisplayed = (newState:any) => {
     setItems(prevState => ({
         ...prevState,
         ...newState

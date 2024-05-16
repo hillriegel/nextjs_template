@@ -118,7 +118,7 @@ export default function CurrencyConverter() {
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item>
-                    <TextField id="outlined-basic" label="Amount" variant="outlined" value={amountTo} readOnly />
+                    <TextField id="outlined-basic" label="Amount" variant="outlined" value={amountTo} />
                   </Grid>
                   <Grid item>
                     <Box sx={{ minWidth: 120 }}>
