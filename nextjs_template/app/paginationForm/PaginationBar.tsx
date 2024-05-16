@@ -40,7 +40,7 @@ export default function PaginationBar({items, updateItemsDisplayed, setLoading}:
             .catch((error) => {
                 console.error('Error fetching data:', error);
             });
-    }, [items.pageNumber, numPages, updateItemsDisplayed]);
+    }, [items.pageNumber, numPages, updateItemsDisplayed, setLoading]);
 
     return (
         <div>

@@ -9,7 +9,7 @@ export default function CssDemo() {
     
     return (
       <div>
-              <h1>Advanced CSS Practice</h1>
+              <h1>CSS Demo</h1>
           <main>
               <section className="hero">
                   <button className="btn btn-primary">Get Started</button>
