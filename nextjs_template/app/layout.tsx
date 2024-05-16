@@ -43,7 +43,7 @@ const toggleDrawer = (newOpen: boolean) => () => {
 const DrawerList = (
   <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
     <List>
-  
+
         <ListItem key={"home"} disablePadding>
           <Link href="/">
             <ListItemButton>
