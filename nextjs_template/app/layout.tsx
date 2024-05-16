@@ -26,6 +26,7 @@ import ViewStream from '@mui/icons-material/ViewStream';
 import Link from 'next/link';
 import PagesIcon from '@mui/icons-material/Pages';
 import Footer from './footer';
+import CodeIcon from '@mui/icons-material/Code';
 
 export default function RootLayout({
   children,
@@ -66,7 +67,7 @@ const DrawerList = (
         </Link>
       </ListItem>
 
-      <ListItem key={"currencyEx"} disablePadding>
+      <ListItem key={"sampleForm"} disablePadding>
           <Link href="/sampleForm">
         <ListItemButton>
           <ListItemIcon>
@@ -77,13 +78,24 @@ const DrawerList = (
         </Link>
       </ListItem>
       
-      <ListItem key={"currencyEx"} disablePadding>
+      <ListItem key={"pagination"} disablePadding>
           <Link href="/paginationForm">
         <ListItemButton>
           <ListItemIcon>
             <PagesIcon/>
           </ListItemIcon>
           <ListItemText primary="Pagination" />
+        </ListItemButton>
+        </Link>
+      </ListItem>
+
+      <ListItem key={"cssDemo"} disablePadding>
+          <Link href="/cssDemo">
+        <ListItemButton>
+          <ListItemIcon>
+            <CodeIcon/>
+          </ListItemIcon>
+          <ListItemText primary="CSS Demo" />
         </ListItemButton>
         </Link>
       </ListItem>
