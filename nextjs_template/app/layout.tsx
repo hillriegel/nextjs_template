@@ -64,7 +64,7 @@ const DrawerList = (
         </Link>
       </ListItem>
 
-      <ListItem key={"currencyEx"} disablePadding>
+      <ListItem key={"sampleForm"} disablePadding>
           <Link href="/sampleForm">
         <ListItemButton>
           <ListItemIcon>
