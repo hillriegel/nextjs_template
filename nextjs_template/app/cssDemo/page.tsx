@@ -2,6 +2,7 @@
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './demo.css';
+import SelectMenu from './SelectMenu';
 
 import Grid from '@mui/material/Grid';
 
@@ -44,6 +45,14 @@ export default function CssDemo() {
                       <p>This is a description of card 3.</p>
                   </div>
               </section>
+
+                <div style={{height: '400px', padding: '20px'}}>
+                    <h2> Custom Select Dropdown</h2>
+                    <br />
+                    <section>
+                        <SelectMenu />
+                    </section>
+              </div>
           </main>
     </div>
       

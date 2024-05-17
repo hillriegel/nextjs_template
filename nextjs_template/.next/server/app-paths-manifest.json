@@ -1,5 +1,4 @@
 {
-  "/cssDemo/page": "app/cssDemo/page.js",
-  "/paginationForm/page": "app/paginationForm/page.js",
-  "/currencyConverter/page": "app/currencyConverter/page.js"
+  "/page": "app/page.js",
+  "/cssDemo/page": "app/cssDemo/page.js"
 }

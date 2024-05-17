@@ -1,9 +1,10 @@
 {
   "pages": {
-    "/paginationForm/page": [
+    "/cssDemo/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/paginationForm/page.js"
+      "static/css/app/cssDemo/page.css",
+      "static/chunks/app/cssDemo/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,16 +12,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/currencyConverter/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/currencyConverter/page.js"
-    ],
-    "/cssDemo/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/cssDemo/page.css",
-      "static/chunks/app/cssDemo/page.js"
+      "static/chunks/app/page.js"
     ]
   }
 }
