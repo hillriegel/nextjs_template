@@ -75,7 +75,6 @@ button:hover {
 /* SELECT MENU */
 
 
-
 .searchfield-text {
     flex-basis: 0;
     flex-grow: 1;
@@ -85,6 +84,7 @@ button:hover {
     font-size: 5;
     flex-basis: 0;
     cursor: pointer;
+    color: #aaaaaa
 }
 
 .hidden { display: none; }
@@ -95,11 +95,12 @@ button:hover {
 .searchfield-arrow {
     flex-basis: 0;
     transition: transform 0.3s ease; /* Smooth transition for the rotation */
+    color: #aaaaaa
 }
 
 .search-field {
     border-radius: 10px;
-    border: solid 1px #dddddd;
+    border: solid 1px #aaaaaa;
     padding: 20px;
     width: 300px;
     height: 40px;
@@ -107,10 +108,11 @@ button:hover {
     align-items: center;
     cursor: pointer;
     justify-content: space-between;
+    background-color: #fafafa;
 }
 
 .search-field:hover {
-   border: solid 1px #00ff00;
+   border: solid 1px hsl(201, 85%, 37%);
 }
 
 .options-window {
@@ -119,7 +121,8 @@ button:hover {
     width: 300px;
     height: 300px;
     align-items: start;
-    overflow: auto;
+    overflow: scroll;
+    background-color: #fafafa;
 }
 
 .menu-list {
@@ -140,6 +143,6 @@ button:hover {
 }
 
 .menu-option:hover {
-    background-color: #dddddd;
+    background-color: #bad6f1;
 }
 

@@ -8,7 +8,7 @@ import FetchMovies from './FetchMovieOptions';
 
 
 export default function SelectMenu() {
-    const [selectedOption, setSelectedOption] = useState<string | null>(null);
+    const [selectedOption, setSelectedOption] = useState<string | null>('Select a genre');
     const [isWindowOpen, setIsWindowOpen] = useState(false);
     const [genres, setGenres] = useState([]);
     const [showX, setShowX] =  useState(false);
@@ -28,7 +28,7 @@ export default function SelectMenu() {
     };
 
     const clearSelect = () => {
-        setSelectedOption(null);
+        setSelectedOption('Select a genre');
         setIsWindowOpen(false); // Close the winadow when selection is cleared
         setShowX(false);
     };

@@ -1,11 +1,13 @@
 
 // FetchMovies.js
 async function FetchMovies() {
+
+    const apiKey = process.env.REACT_APP_API_KEY;
     const options = {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNGY2MjJhZGQ0MDY0NTlmMzk2NmJkOTI3NTBhM2Q3ZiIsInN1YiI6IjY2NDY2ZjFkYjY5NGY0M2I3MWIzNTRlNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tCIZlN87v37TS0TLbeda_VkAd7u44z6GZwg3wGy7Rm8'
+            Authorization: apiKey,
         }
     };
 
