@@ -78,7 +78,9 @@ export default function CurrencyConverter() {
 
   return (
     <main className="flex  flex-col">
-      <div className="items-center justify-between" style={{marginTop: '10px', width: '100%', textAlign: 'center', color: '#ffffff'}}>
+      <h1>Currency Converter</h1>
+      <p>This simple form uses a debounced call to get currency exchange data.</p>
+      <div className="items-center justify-between" style={{marginTop: '10px', width: '100%', textAlign: 'center', color: '#443355'}}>
         {now.toDateString()}
       </div>
       <div className="min-h-screen flex-1" style={{padding: '20px', width: '100%'}}>

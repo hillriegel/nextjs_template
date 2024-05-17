@@ -7,7 +7,7 @@ import './demo.css';
 import FetchMovies from './FetchMovieOptions';
 
 
-export default function SearchBar() {
+export default function SelectMenu() {
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
     const [isWindowOpen, setIsWindowOpen] = useState(false);
     const [genres, setGenres] = useState([]);

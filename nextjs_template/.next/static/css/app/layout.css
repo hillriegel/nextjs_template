@@ -514,9 +514,6 @@ video {
     max-width: 1536px;
   }
 }
-.visible {
-  visibility: visible;
-}
 .fixed {
   position: fixed;
 }
@@ -537,9 +534,6 @@ video {
 }
 .flex {
   display: flex;
-}
-.hidden {
-  display: none;
 }
 .h-48 {
   height: 12rem;
@@ -614,13 +608,8 @@ video {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #222222;
+  background: #dddddd;
     height: 100%;
 }
 
@@ -630,7 +619,7 @@ h1 {
 
 .mainContent {
   padding: 20px;
-  color: #ffffff;
+  color: #444444;
 }
 
 .header {

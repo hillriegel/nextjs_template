@@ -43,7 +43,7 @@ const Pagination = () => {
 
   return (
     <main className="flex min-h-screen flex-col" style={{marginTop: '30px'}}>
-
+      <h1>Example of a Pagination Display</h1>
      <div style={{padding: '24px'}}>
             <SearchBar />
             <br />

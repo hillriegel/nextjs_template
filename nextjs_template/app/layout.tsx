@@ -127,13 +127,7 @@ const DrawerList = (
             <Button onClick={toggleDrawer(true)}><MenuIcon /></Button> 
           </Grid>
           <Grid item sm={2}>
-            <Image
-                src="/images/navan_logo2.jpg"
-                alt="Navan Logo"
-                width={100}
-                height={24}
-                priority
-             />
+            <div style={{marginTop: '5px'}}>Grise's Playground</div>
           </Grid>
         </Grid>
         </div>
