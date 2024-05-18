@@ -2,25 +2,36 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/cssDemo/demo.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************/
 /* Grid layout for features */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+h1 {
+  font-size: 1.5em;
+  font-family: "Freeman";
+  font-weight: 400;
+}
+
 .features {
-    /* display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;*/
     height: 400px;
     border: solid 1px;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     padding: 20px;
     margin: 20px;
     align-items: flex-start;
     justify-content: center;
     align-content: flex-start;
+    border-radius: 10px;
 }
 
 .feature {
-    width: 100px;
     flex-grow: 0;
     margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    border: solid 1px #9878ab;
+    background-color: #a9caa9;
 }
 
 /* Keyframes animation */
@@ -49,14 +60,15 @@
 }
 
 button {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px 10px 20px;
     margin: 10px;
-    border: solid 1px;
+    border: solid 1px #cccccc;
+    border-radius: 10px
 }
 
 button:hover {
-    background-color: #444444;
+    background-color: #9878ab;
+    color: #ffffff;
 }
 
 .card {
@@ -144,5 +156,14 @@ button:hover {
 
 .menu-option:hover {
     background-color: #bad6f1;
+}
+
+.css-content {
+    border: solid 1px #888888;
+    background-color: #aaaaaa;
+    color: #dddddd;
+    padding: 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: .8em
 }
 

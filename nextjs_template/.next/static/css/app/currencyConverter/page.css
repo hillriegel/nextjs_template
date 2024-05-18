@@ -1,0 +1,170 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/currencyConverter/currency.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+/* Grid layout for features */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+h1 {
+  font-size: 1.5em;
+  font-family: "Freeman";
+  font-weight: 400;
+}
+
+.currencyContainer {
+    height: 300px;
+    border: solid 1px #aaaaaa;
+    flex-direction: row;
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 10px;
+    background-color: #d8d8d8;
+}
+
+.feature {
+    flex-grow: 0;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    border: solid 1px #9878ab;
+    background-color: #a9caa9;
+}
+
+/* Keyframes animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-primary:hover {
+    animation: pulse 1s infinite;
+}
+
+/* Additional card layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border: solid 1px #cccccc;
+    border-radius: 10px
+}
+
+button:hover {
+    background-color: #9878ab;
+    color: #ffffff;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+/* SELECT MENU */
+
+
+.searchfield-text {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.searchfield-close {
+    font-size: 5;
+    flex-basis: 0;
+    cursor: pointer;
+    color: #aaaaaa
+}
+
+.hidden { display: none; }
+
+.visible { display: flex; }
+
+
+.searchfield-arrow {
+    flex-basis: 0;
+    transition: transform 0.3s ease; /* Smooth transition for the rotation */
+    color: #aaaaaa
+}
+
+.search-field {
+    border-radius: 10px;
+    border: solid 1px #aaaaaa;
+    padding: 20px;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+
+.search-field:hover {
+   border: solid 1px hsl(201, 85%, 37%);
+}
+
+.options-window {
+    border-radius: 10px;
+    border: solid 1px #dddddd;
+    width: 300px;
+    height: 300px;
+    align-items: start;
+    overflow: scroll;
+    background-color: #fafafa;
+}
+
+.menu-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.menu-option {
+    cursor: pointer;
+    flex-grow: 1;              /* Take up available space vertically */
+    width: 100%;               /* Full width of the container */
+    padding: 10px;             /* Provides some spacing inside each option */    /* Border for visibility */
+    box-sizing: border-box;    /* Includes padding and border in the width calculation */
+    text-align: left;          /* Aligns text to the left */
+    padding-left: 20px;
+}
+
+.menu-option:hover {
+    background-color: #bad6f1;
+}
+
+.css-content {
+    border: solid 1px #888888;
+    background-color: #aaaaaa;
+    color: #dddddd;
+    padding: 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: .8em
+}
+

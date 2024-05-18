@@ -12,6 +12,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import './currency.css';
 
 const now = new Date();
 
@@ -77,16 +78,23 @@ export default function CurrencyConverter() {
   };
 
   return (
-    <main className="flex  flex-col">
+    <main className="flex  flex-col" style={{margin: '20px'}}>
       <h1>Currency Converter</h1>
-      <p>This simple form uses a debounced call to get currency exchange data.</p>
+        <p>This is a simple currency converter that makes use of a free API to retrieve the list of currencies to populate
+            the dropdown menu.
+            </p>
+            <p>
+              Half a second after the amount is changed the debounced call is made to a second API to retrieve the exchange value.
+            </p>
+      <br />
       <div className="items-center justify-between" style={{marginTop: '10px', width: '100%', textAlign: 'center', color: '#443355'}}>
         {now.toDateString()}
       </div>
-      <div className="min-h-screen flex-1" style={{padding: '20px', width: '100%'}}>
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
-            <Card style={{backgroundColor: '#fff', width: '80%'}}>
+
+
+      <div className="currencyContainer">
+          <div className="exchangeInput">
+            <Card>
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item>
@@ -113,10 +121,10 @@ export default function CurrencyConverter() {
                 </Grid>
               </CardContent>
             </Card>
-          </Grid>
-
-          <Grid item xs={6}>
-            <Card style={{backgroundColor: '#fff', width: '80%'}}>
+          </div>
+          <div style={{fontSize: '2em'}}>=</div>
+          <div className="exchangeInput">
+            <Card>
               <CardContent>
                 <Grid container spacing={2}>
                   <Grid item>
@@ -143,9 +151,13 @@ export default function CurrencyConverter() {
                 </Grid>
               </CardContent>
             </Card>
-          </Grid>
-        </Grid>
-      </div>
+
+       
+          </div>
+          
+        </div>
+        
+        <br />
     </main>
   );
 }

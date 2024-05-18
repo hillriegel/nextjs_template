@@ -535,6 +535,9 @@ video {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .h-48 {
   height: 12rem;
 }
@@ -593,6 +596,9 @@ video {
   transition-duration: 150ms;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+
 :root {
   --foreground-rgb: 130, 32, 246;
   --background-start-rgb: 229, 89, 68;
@@ -609,12 +615,18 @@ video {
 
 body {
   color: #222222;
-  background: #dddddd;
+  background: #f2efef;
     height: 100%;
 }
 
-h1 {
+p {
+  font-size: .9em;
+}
+
+.freeman {
   font-size: 1.5em;
+  font-family: "Freeman";
+  font-weight: 400;
 }
 
 .mainContent {
