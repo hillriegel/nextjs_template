@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
 
 
@@ -20,13 +21,14 @@
 }
 
 body {
-  color: #222222;
-  background: #f2efef;
-    height: 100%;
+  color: #394E5A;
+  background: #F5F5F5;
+  height: 100%;
 }
 
 p {
-  font-size: .9em;
+  font-size: .87em;
+  margin-top: 20px;
 }
 
 .freeman {
@@ -37,12 +39,35 @@ p {
 
 .mainContent {
   padding: 20px;
-  color: #444444;
+  color: #394E5A;
 }
 
 .header {
   background-color: #ffffff;
+  height: 50px;
+  font-size: 1.25em;
+  color: #1f605f;
+  font-family: "Freeman";
 }
+
+h1 {
+  font-size: 1.5em;
+  font-family: "Freeman";
+  font-weight: 400;
+  color: #1f605f;
+}
+
+
+
+/*
+Primary (Teal): #32BEBB
+Secondary (Soft Blue): #559CAD
+Background (Light Grey): #F5F5F5
+Text (Dark Slate Grey): #394E5A
+Neutral (Pale Cyan): #E0F4F7
+Highlight (Warm Yellow): #FFC857
+*/
+
 
 @layer utilities {
   .text-balance {

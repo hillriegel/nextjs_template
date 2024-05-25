@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/cssDemo/page": "app/cssDemo/page.js",
+  "/currencyConverter/page": "app/currencyConverter/page.js",
+  "/paginationForm/page": "app/paginationForm/page.js",
+  "/sampleForm/page": "app/sampleForm/page.js",
+  "/page": "app/page.js"
+}

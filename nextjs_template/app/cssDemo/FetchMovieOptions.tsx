@@ -2,14 +2,14 @@
 // FetchMovies.js
 async function FetchMovies() {
 
-    const apiKey = process.env.REACT_APP_API_KEY;
+    const authToken = process.env.REACT_APP_API_KEY;
     const options = {
         method: 'GET',
         headers: {
-            accept: 'application/json',
-            Authorization: apiKey,
+          accept: 'application/json',
+          Authorization: authToken,
         }
-    };
+      };
 
     try {
         const response = await fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options);
